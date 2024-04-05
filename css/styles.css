@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#map-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.mapboxgl-popup {
+    font-size: 12px;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+#sidebar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    width: 250px;
+    background: #ececec;
+    padding: 15px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 2px 2px rgb(116 116 116)
+    -moz-box-shadow: 0px 0px 2px 2px rgb(116 116 116)
+    box-shadow: 0px 0px 2px 2px rgb(116 116 116)
+}
+
+#sidebar h1 {
+    font-size: 24px
+}
+
+#sidebar p {
+    font-size: 14px;
+}
+
+#sidebar .header {
+   display: flex; 
+}
+
+#sidebar .pizza-emoji {
+    font-size: 40px;
+    margin-right: 5px;
+}
+
+#sidebar .source-code-link {
+    text-decoration: none;
+    font-size: 10px;
+}
+
+#sidebar .source-code-link:hover {
+    text-decoration: underline;
+    font-size: 10px;
+}
+
+/* legend styles from https://docs.mapbox.com/help/tutorials/choropleth-studio-gl-pt-1/ */
+.legend {
+    padding: 10px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+    line-height: 18px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.legend-key {
+    display: inline-block;
+    border-radius: 20%;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}

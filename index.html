@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pizza Party 2024</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="sidebar">
+        <div class="header">
+            <span class="pizza-emoji">🍕</span>
+            <h1>Pizza Party 2024</h1>
+        </div>
+        <p>Our web mapping class crowd-sourced a dataset of our favorite pizza places in NYC. The google sheet was exported as a CSV, converted to JSON and used to add markers to this Mapbox GL JS map.</p>
+        <p>We added popups with text including variables from the data.</p>
+        <p><strong>Click a marker for details</strong></p>
+        <div class="legend">
+            <div>
+                <span class="legend-key" style="background-color: #8dd6a1;"></span>
+                <span>Professor</span>
+            </div>
+            <div>
+                <span class="legend-key" style="background-color: #d67ea6;"></span>
+                <span>Urban Planning Students</span>
+            </div>
+            <div>
+                <span class="legend-key" style="background-color: #1f8f39;"></span>
+                <span>Public Administration Students</span>
+            </div>
+            <div>
+                <span class="legend-key" style="background-color: #8f5b1f;"></span>
+                <span>Public Policy Students</span>
+            </div>
+        </div>
+        <a class="source-code-link" href="https://github.com/chriswhong/pizza-map-2024">Source Code</a>
+    </div>
+    <div id="map-container"></div>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js"></script>
+    <script src="js/pizza-data.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
