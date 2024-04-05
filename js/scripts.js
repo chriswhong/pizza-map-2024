@@ -38,7 +38,7 @@ pizzaData.forEach(function (pizzaRecord) {
 
     // create a popup to attach to the marker
     const popup = new mapboxgl.Popup({
-        offset: 40,
+        offset: 24,
         anchor: 'bottom'
     }).setText(
         `${pizzaRecord.name} loves to eat 🍕 at ${pizzaRecord.pizza_restaurant_name}`
@@ -46,7 +46,7 @@ pizzaData.forEach(function (pizzaRecord) {
 
     // create a marker, set the coordinates, add the popup, add it to the map
     new mapboxgl.Marker({
-        scale: 0.5,
+        scale: 0.65,
         color: color
     })
         .setLngLat([pizzaRecord.longitude, pizzaRecord.latitude])
